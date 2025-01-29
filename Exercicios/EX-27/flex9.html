@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br   ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+
+        }
+
+        div.item { 
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        /* Flex = flex-grow + flex-shrink + flex-basis */
+
+        /*flex: initial = Flex: 0 1 auto */
+
+        /*flex: none = Flex: 0 0 auto */
+
+        /* flex: auto = flex: 1 1 auto */
+
+        div#cxA {
+       flex: 1 0 250px;    
+        }
+
+        div#cxB {
+        flex: 1 1 150px;  
+        }
+
+        div#cxC {
+        flex: 8 1 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">Exemplo de Bloco A</div>
+        <div class="item" id="cxB">Exemplo de Bloco B</div>
+        <div class="item" id="cxC">Exemplo de Bloco C</div>
+    </div>
+</body>
+</html>
